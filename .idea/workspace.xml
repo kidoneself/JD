@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="257fe3f1-6bfb-4ed8-a3d5-ab352a0dd47d" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xnAffeJlkDUaKQdULtQ7G1d5Q6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.JdApplicationTests.contextLoads">
+    <configuration name="JdApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kidoneself.jd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kidoneself.jd" />
+      <option name="MAIN_CLASS_NAME" value="com.kidoneself.jd.JdApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kidoneself.jd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kidoneself.jd" />
+      <option name="MAIN_CLASS_NAME" value="com.kidoneself.jd.JdApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jd" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kidoneself.jd.JdApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JdApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.JdApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((JSONObject) parse).getJSONObject(&quot;data&quot;).getJSONObject(&quot;userInfo&quot;).getJSONObject(&quot;baseInfo&quot;)" language="JAVA" />
+        <watch expression="result.getJSONObject(&quot;data&quot;).getJSONObject(&quot;userInfo&quot;).get(&quot;baseInfo&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
