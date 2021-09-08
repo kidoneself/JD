@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="257fe3f1-6bfb-4ed8-a3d5-ab352a0dd47d" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/Factory/HttpInstanceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/Factory/HttpInstanceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kidoneself/jd/util/DoRequestFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kidoneself/jd/util/DoRequestUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kidoneself/jd/JdApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/kidoneself/jd/JdApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +35,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.JdApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.JdApplicationTests.getUserInfo">
     <configuration name="JdApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jd" />
       <extension name="coverage">
@@ -64,6 +69,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdApplicationTests.getUserInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kidoneself.jd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kidoneself.jd" />
+      <option name="MAIN_CLASS_NAME" value="com.kidoneself.jd.JdApplicationTests" />
+      <option name="METHOD_NAME" value="getUserInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jd" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kidoneself.jd.JdApplication" />
@@ -73,12 +94,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdApplicationTests.getUserInfo" />
         <item itemvalue="JUnit.JdApplicationTests.contextLoads" />
         <item itemvalue="JUnit.JdApplicationTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -100,15 +125,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/kidoneself/jd/JdApplicationTests.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
+          <line>108</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="((JSONObject) parse).getJSONObject(&quot;data&quot;).getJSONObject(&quot;userInfo&quot;).getJSONObject(&quot;baseInfo&quot;)" language="JAVA" />
         <watch expression="result.getJSONObject(&quot;data&quot;).getJSONObject(&quot;userInfo&quot;).get(&quot;baseInfo&quot;)" language="JAVA" />
+        <watch expression="request.getAllHeaders()" language="JAVA" />
+        <watch expression="result" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
