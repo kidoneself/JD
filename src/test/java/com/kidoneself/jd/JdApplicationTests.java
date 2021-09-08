@@ -3,6 +3,7 @@ package com.kidoneself.jd;
 import com.alibaba.fastjson.JSONObject;
 import com.kidoneself.jd.Factory.HttpInstanceFactory;
 import com.kidoneself.jd.po.JDUser;
+import com.kidoneself.jd.util.HttpClientTool;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -13,6 +14,7 @@ import org.apache.http.client.utils.HttpClientUtils;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
+import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -36,7 +38,7 @@ class JdApplicationTests {
                 new BasicHeader("cookie", "pt_key=AAJhMoazADDzGgTvjoaytT-Ibu0KB4X58qdZwuAZo44PygrREezoKubrGzKMXlm7OS1-VnAbuhM;pt_pin=jd_trbybgrVjMqE;"),
                 new BasicHeader("User-Agent", "" +
                         "jdapp;android;10.0.2;10;network/wifi;Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045230 Mobile Safari/537.36")
-                       //
+                //
         };
         HttpInstanceFactory.HttpInstance instance = HttpInstanceFactory.getInstance();
         instance.setSelfHeaders(selfHeaders);
@@ -64,16 +66,6 @@ class JdApplicationTests {
 //        content-type: application/json
 //        Referer: https://servicewechat.com/wx91d27dbf599dff74/560/page-frame.html
 //        Accept-Encoding: gzip, deflate, br
-
-
-
-
-
-
-
-
-
-
 
 
 //        {"babelChannel":"121","lng":"121.425238","lat":"31.137729","sid":"b744610e2598cc9614c386057428fc5w","un_area":"2_2813_61130_0","version":14,"channel":1}
@@ -145,4 +137,25 @@ class JdApplicationTests {
         }
         return null;
     }
+
+
+    @Test
+    public void test01() {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("functionId", "initForFarm");
+        params.put("appid", "wh5");
+        JSONObject body = new JSONObject();
+        body.put("imageUrl", "");
+        body.put("nickName", "");
+        body.put("shareCode", "81f8c0f0ea554b2385d4f866d4b2203f");
+        body.put("babelChannel", "3");
+        body.put("version", "2");
+        body.put("channel", "1");
+        params.put("body", body.toString());
+        String url = "https://api.m.jd.com/client.action";
+        String s = HttpClientTool.doGet(url, params);
+        Object parse = JSONObject.parse(s);
+    }
+
+
 }

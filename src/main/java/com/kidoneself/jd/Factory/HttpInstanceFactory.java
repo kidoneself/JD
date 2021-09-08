@@ -3,6 +3,7 @@ package com.kidoneself.jd.Factory;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.kidoneself.jd.po.JDUser;
+import com.kidoneself.jd.util.HttpClientTool;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
@@ -42,7 +43,7 @@ public class HttpInstanceFactory {
 //                new BasicHeader("sec-fetch-mode", "cors"),
 //                new BasicHeader("sec-fetch-site", "same-site"),
 //                new BasicHeader("Content-Type", "application/x-www-form-urlencoded"),
-    };
+        };
         Header[] selfHeaders;
 
         /**
@@ -76,7 +77,6 @@ public class HttpInstanceFactory {
                 System.arraycopy(fixedHeaders, 0, headers, 0, fixedHeaders.length);
                 System.arraycopy(selfHeaders, 0, headers, fixedHeaders.length, selfHeaders.length);
                 request.setHeaders(headers);
-
                 response = httpClient.execute(request);
                 HttpEntity httpEntity = response.getEntity();
                 return EntityUtils.toString(httpEntity, "utf-8");
